@@ -13,8 +13,6 @@ jobs:
         run: echo "La meva primera GitHub Action a DAW-M8"
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          path: main
       - name: Install Flask
         run: pip install Flask
       - name: ls
