@@ -21,5 +21,7 @@ jobs:
           python-version: '3.10'
       - name: Install Flask
         run: pip install Flask
+      - name: ls
+        run: ls
       - name: Run API
         run: python api_calculadora.py
