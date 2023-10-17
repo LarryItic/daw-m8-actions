@@ -19,7 +19,13 @@ jobs:
         run: ls
       - name: Run API
         run: python api_calculadora.py &
-      - name: Execute Test
+      - name: Execute Suma Test
         run: curl localhost:5000/suma/5/1 | grep 6
+      - name: Execute Resta Test
+        run: curl localhost:5000/resta/5/1 | grep 4
+      - name: Execute Multiplicacion Test
+        run: curl localhost:5000/multiplica/5/1 | grep 5
+      - name: Execute Division Test
+        run: curl localhost:5000/divideix/5/1 | grep 5
       - name: Kill proccess
         run: pkill -9 python
